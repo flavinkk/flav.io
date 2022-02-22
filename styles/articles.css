@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Courier Prime', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header {
+    width: 700px;
+}
+
+header #Logo {
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+header #Navigator ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header #Navigator .link {
+    border-bottom: 1px solid black;
+}
+
+header #Navigator .link:hover {
+    border-bottom: 1px solid white;
+}
+
+
+/* Ye 🔥 */
+.ye img {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    width: 320px;
+    transform: scaleX(-1);
+    animation: bell 2s infinite;
+}
+
+@keyframes bell {
+    0% { -webkit-transform: rotateZ(-4deg); }
+    50% { -webkit-transform: rotateZ( 5deg); }
+    100% { -webkit-transform: rotateZ(-4deg); }
+
+}
