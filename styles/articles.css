@@ -25,41 +25,78 @@ header {
     width: 700px;
 }
 
-header #Logo {
+    header #Logo {
+        text-align: center;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+
+        header #Navigator ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+            header #Navigator .link {
+                border-bottom: 1px solid black;
+            }
+
+                /* header #Navigator .link:hover {
+                    border-bottom: 1px solid white;
+                } */
+
+main {
+
+    /* Debug */
+    /* border: 1px solid red; */
+}
+
+main #pagetitle {
+    margin: 1em;
     text-align: center;
-    margin-bottom: 2em;
-    margin-top: 2em;
 }
 
-header #Navigator ul {
+main #container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+
+    /* Debug */
+    /* border: 1px solid gold; */
 }
 
-header #Navigator .link {
-    border-bottom: 1px solid black;
+main .article {
+    margin: 1em;
+    padding: 1em;
+
+    border: 1px solid black;
 }
 
-header #Navigator .link:hover {
-    border-bottom: 1px solid white;
-}
+    main .article:hover {
+        margin: 1em;
+        padding: 1em;
+
+        border: 1px solid white;
+    }
+
 
 
 /* Ye 🔥 */
 .ye img {
     position: absolute;
     top: 70%;
-    left: 70%;
-    width: 320px;
+    left: 1%;
+    width: 220px;
     transform: scaleX(-1);
     animation: bell 2s infinite;
 }
 
 @keyframes bell {
-    0% { -webkit-transform: rotateZ(-4deg); }
-    50% { -webkit-transform: rotateZ( 5deg); }
-    100% { -webkit-transform: rotateZ(-4deg); }
+    0% { -webkit-transform: rotateZ( 5deg ); }
+    50% { -webkit-transform: rotateZ( -5deg ); }
+    100% { -webkit-transform: rotateZ( 5deg ); }
 
 }

@@ -24,26 +24,27 @@ header {
     width: 700px;
 }
 
-header #Logo {
-    text-align: center;
-    margin-bottom: 2em;
-    margin-top: 2em;
-}
+    header #Logo {
+        text-align: center;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
 
-header #Navigator ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-}
+    header #Navigator ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        list-style: none;
+    }
 
-header #Navigator .link {
-    border-bottom: 1px solid black;
-}
+        header #Navigator .link {
+            border-bottom: 1px solid black;
+        }
 
-header #Navigator .link:hover {
-    border-bottom: 1px solid white;
-}
+            /* header #Navigator .link:hover {
+                border-bottom: 1px solid white;
+            } */
 
 main {
     display: flex;

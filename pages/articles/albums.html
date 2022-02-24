@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles/meta.css">
+    <title>flav.io</title>
+</head>
+<body>
+    <header>
+
+        <div id="Logo">
+            <h1>
+                flav.io
+            </h1>
+        </div>
+
+        <nav id="Navigator">
+            <ul>
+                <a class="link" href="../../index.html">Home</a>
+                <a class="link" href="/pages/articles.html">Articles</a>
+                <a class="link" href="/pages/knowledge.html">Knowledge</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="pagetitle">
+            Meus álbuns favoritos
+        </h1>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vero praesentium cum, rem aliquid perspiciatis itaque eveniet minus placeat aspernatur ea dignissimos consequatur veniam labore neque autem? Libero, tempore laboriosam?
+            Excepturi, expedita corrupti? Omnis, excepturi dolorem! Hic velit quo illum. Eveniet dolorem adipisci nulla aperiam ipsum, voluptates laudantium voluptas mollitia at? Maiores magni in odit cumque accusamus quidem nihil molestias.
+            Consequuntur dolorem nostrum amet. Culpa laborum nam fugit aut id, perferendis ex sed facilis quos fuga reprehenderit tenetur cumque tempore illo nisi aliquid tempora rerum similique eligendi minus placeat nesciunt.
+        </p>
+
+        <!-- Adicionar imagem -->
+        <br><br><br>
+        <!-- <img src="" alt="">  -->
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vero praesentium cum, rem aliquid perspiciatis itaque eveniet minus placeat aspernatur ea dignissimos consequatur veniam labore neque autem? Libero, tempore laboriosam?
+            Excepturi, expedita corrupti? Omnis, excepturi dolorem! Hic velit quo illum. Eveniet dolorem adipisci nulla aperiam ipsum, voluptates laudantium voluptas mollitia at? Maiores magni in odit cumque accusamus quidem nihil molestias.
+            Consequuntur dolorem nostrum amet. Culpa laborum nam fugit aut id, perferendis ex sed facilis quos fuga reprehenderit tenetur cumque tempore illo nisi aliquid tempora rerum similique eligendi minus placeat nesciunt.
+        </p>
+
+    </main>
+    <footer>
+        <div class="Footer">
+            <p>
+                Builded with HTML, CSS, JQuery and 🔥.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../javascript/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('.link').hover( 
+                function(){
+                    var $this = $( this )
+                    $this.data('default', $this.text())
+                    $this.text('<' + $this.text() + '>')
+                },
+                function() {
+                    var $this = $( this )
+                    $this.text($this.data('default'));
+                }
+            )
+        });
+    </script>
+</body>
+</html>

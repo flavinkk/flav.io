@@ -23,7 +23,37 @@
         </nav>
     </header>
 
+
+<!-- main -->
+
+
+
+    <footer>
+        <div class="Footer">
+            <p>
+                Builded with HTML, CSS, JQuery and 🔥.
+            </p>
+        </div>
+    </footer>
     <div class="pluto">
         <img src="../images/persona/pluto.png">
     </div>
+
+    <script src="../javascript/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('.link').hover( 
+                function(){
+                    var $this = $( this )
+                    $this.data('default', $this.text())
+                    $this.text('<' + $this.text() + '>')
+                },
+                function() {
+                    var $this = $( this )
+                    $this.text($this.data('default'));
+                }
+            )
+        });
+    </script>
 </body>
+</html>

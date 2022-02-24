@@ -48,20 +48,69 @@ header {
                 } */
 
 
-/* pluto 🔥 */
 
-.pluto img {
+main {
+    width: 600px;
+    text-align: justify;
+    margin-bottom: 7em;
+    /* Debug */
+    /* border: 1px solid red; */
+}
+
+    main img {
+        width: 600px;
+    }
+
+    main figure {
+        font-size: smaller;
+        color: gainsboro;
+        text-align: center;
+    }
+
+main #pagetitle {
+    margin: 1em;
+    text-align: center;
+}
+
+main #container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+
+    /* Debug */
+    /* border: 1px solid gold; */
+}
+
+main .article {
+    margin: 1em;
+    padding: 1em;
+
+    border: 1px solid black;
+}
+
+    main .article:hover {
+        margin: 1em;
+        padding: 1em;
+
+        border: 1px solid white;
+    }
+
+
+
+/* Ye 🔥 */
+.ye img {
     position: absolute;
     top: 70%;
-    left: 70%;
-    width: 320px;
-    /* transform: scaleX(-1);
-    animation: bell 2s infinite; */
+    left: 1%;
+    width: 220px;
+    transform: scaleX(-1);
+    animation: bell 2s infinite;
 }
-/* 
-@keyframes bell {
-    0% { -webkit-transform: rotateZ(-4deg); }
-    50% { -webkit-transform: rotateZ( 5deg); }
-    100% { -webkit-transform: rotateZ(-4deg); }
 
-} */
+@keyframes bell {
+    0% { -webkit-transform: rotateZ( 5deg ); }
+    50% { -webkit-transform: rotateZ( -5deg ); }
+    100% { -webkit-transform: rotateZ( 5deg ); }
+
+}
