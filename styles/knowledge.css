@@ -21,6 +21,29 @@ a {
 }
 
 
+main {
+    width: 500px;
+}
+
+    main h1 {
+        text-align: center;
+        margin: 1em;
+    }
+
+        main ul li {
+            margin: 1em;
+            border-bottom: 1px solid white;
+            border-left: 1px solid white;
+            padding: 0.5em;
+            list-style-type: none;
+        }
+
+            main ul li p {
+                font-style: italic;
+                text-align: left;
+                margin-top: 1em;
+            }
+
 header {
     width: 700px;
 }
@@ -47,6 +70,29 @@ header {
                     border-bottom: 1px solid white;
                 } */
 
+.banner {
+    margin-bottom: 10em;
+    text-align: center;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+
+footer .Footer {
+    width: 100vw;
+    display: flex;
+    height: 4em;
+    font-size: 18px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+                
 
 /* pluto 🔥 */
 
